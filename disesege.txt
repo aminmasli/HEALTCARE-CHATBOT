@@ -1,0 +1,150 @@
+1. Fever
+   ├── Cold
+   │   ├── Allergy
+   │   │   └── Diagnosis: Influenza
+   │   └── No Allergy
+   │       └── Diagnosis: Common Cold
+   └── No Cold
+       └── Headache
+           └── Diagnosis: Requires further symptoms for accurate diagnosis
+
+2. Headache
+   ├── Pain in Whole Head
+   │   └── Diagnosis: Stress or Tension Headache
+   └── No Cold
+       ├── Pain on One Side of Head
+       │   ├── Sound/Light Sensitivity
+       │   │   └── Diagnosis: Migraine
+
+
+3. Abdominal Pain
+   ├── With Diarrhea
+   │   ├── Recent Travel
+   │   │   └── Diagnosis: Traveler's Diarrhea or Gastroenteritis
+   │   └── No Recent Travel
+   │       ├── Bloody Diarrhea
+   │       │   └── Diagnosis: Dysentery or Inflammatory Bowel Disease
+   └── Upper Abdominal Pain
+       ├── After Eating
+       │   └── Diagnosis: Gastritis or Peptic Ulcer Disease
+
+
+
+4. Cough
+   ├── With Sputum
+   │   ├── Fever
+   │   │   └── Diagnosis: Pneumonia or Bronchitis
+   │   └── No Fever
+   │       ├── Chronic
+   │       │   └── Diagnosis: COPD or Asthma
+   └── Dry Cough
+       ├── With Shortness of Breath
+       │   └── Recent Contact with Sick Individuals
+       │       └── Diagnosis: COVID-19
+
+5. Rash
+   ├── With Itching
+   │   ├── Insect Bite History
+   │   │   └── Diagnosis: Allergic Reaction to Insect Bites
+   │   └── No Insect Bite
+   │       ├── Red, Raised Patches
+   │       │   └── Diagnosis: Urticaria (Hives)
+   └── Without Itching
+       ├── Fever
+       │   ├── Joint Pain
+       │   │   └── Diagnosis: Viral Exanthems or Rheumatic Fever
+
+6. Urinary Symptoms
+   ├── Painful Urination
+   │   ├── Increased Frequency
+   │   │   └── Diagnosis: Urinary Tract Infection (UTI)
+   │   └── Discharge
+   │       └── Diagnosis: Sexually Transmitted Infection (STI)
+   └── Blood in Urine
+       └── Without Pain
+           └── Diagnosis: Kidney Stones or Bladder Cancer
+
+7. Chest Pain
+   ├── Radiating to Arm
+   │   ├── Shortness of Breath
+   │   │   └── Diagnosis: Myocardial Infarction (Heart Attack)
+   └── With Deep Breaths
+       ├── Recent Long Travel
+       │   └── Diagnosis: Pulmonary Embolism
+
+8. Shortness of Breath
+   ├── Sudden Onset
+   │   ├── After Allergen Exposure
+   │   │   └── Diagnosis: Anaphylaxis
+   │   └── No Allergen Exposure
+   │       └── Diagnosis: Spontaneous Pneumothorax
+   └── Gradual Onset
+       ├── With Exercise
+       │   └── Diagnosis: Asthma or Heart Failure
+
+9. Weight Loss
+   ├── With Increased Appetite
+   │   ├── With Thirst
+   │   │   └── Diagnosis: Diabetes Mellitus
+   └── Without Increased Appetite
+       ├── With Night Sweats
+       │   └── Diagnosis: Tuberculosis or Cancer
+
+10. Fatigue
+    ├── With Pale Skin
+    │   ├── Shortness of Breath
+    │   │   └── Diagnosis: Anemia
+    └── Without Pale Skin
+        ├── With Swollen Glands
+            └── Diagnosis: Mononucleosis or Lymphoma
+
+
+
+
+
+
+
+Hypertension Diagnosis
+├── Primary Hypertension (Essential)
+│   └── No Identifiable Cause
+│       └── Diagnosis: Lifestyle changes and/or medication
+├── Secondary Hypertension
+│   └── Caused by Another Condition
+│       ├── Kidney Disease
+│       │   └── Diagnosis: Treat underlying kidney issues
+│       ├── Adrenal Gland Disorders
+│       │   └── Diagnosis: Address specific adrenal conditions
+│       └── Thyroid Problems
+│           └── Diagnosis: Treat the thyroid disorder
+├── Resistant Hypertension
+│   └── Not Controlled by Medication
+│       └── Diagnosis: Evaluate for secondary causes or complex medication strategies
+└── Complicated Hypertension
+    └── Associated with Organ Damage
+        ├── Heart
+        │   └── Diagnosis: Heart disease management
+        ├── Kidneys
+        │   └── Diagnosis: Chronic kidney disease management
+        ├── Eyes
+        │   └── Diagnosis: Retinopathy management
+        └── Brain
+            └── Diagnosis: Stroke prevention and management
+
+
+
+
+
+
+
+
+
+
+hi
+feelling fever today, need help
+also have cold
+no
+thanks, can you suggest me a cardiologist doctor
+booked
+can you suggest me health tips
+yah show me near hospital for me
+Ok, thanks for you help

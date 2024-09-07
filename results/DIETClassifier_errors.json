@@ -1,0 +1,53 @@
+[
+  {
+    "text": "fever",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.7071665525436401,
+        "value": "fever",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "cold",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.724699079990387,
+        "value": "cold",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "headache",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7152799367904663,
+        "value": "headache",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,786 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+      - hey
+      - hello
+      - hi
+      - tabib
+      - hi tabib
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+- intent: goodbye
+  examples: |
+      - bye
+      - good by
+      - cee you later
+      - good night
+      - bye tabib
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+- intent: bot_challenge
+  examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - who are you
+
+- intent: out_of_scope
+  examples: |
+      - what are you?
+      - what are you doing?
+      - what are you up to?
+      - what are you thinking?
+      - what are you made of?
+      - what are you made up of?
+      - what are you made from?
+      - what are you made out of the way?
+      - i am god
+      - sjdjajsdl
+      - asjdaljhsdj
+      - asdfja;lsdf
+      - i am batman
+      - i am iron man
+      - i love you
+      - i am a god
+      - i dont like you
+      - you are idiot
+      - you are stupid
+      - you are dumb
+      - you are a fool
+      - you are a moron
+
+- intent: affirm
+  examples: |
+      - yes
+      - Yes
+      - yea
+      - yep
+      - yeah
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - absolutely
+      - sure
+      - definitely
+      - right
+      - ok
+      - okay
+      - cool
+      - great
+      - sounds good
+      - perfect
+      - that's right
+      - that's correct
+
+- intent: deny
+  examples: |
+      - no
+      - No
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - nope
+      - nah
+      - nay
+      - not really
+      - not sure
+      - not really sure
+      - don't like that
+   
+- intent: say_thanks
+  examples: |
+      - thanks
+      - thank you
+      - thank you very much
+      - thanks a lot
+      - thank you so much
+      - thanks a bunch
+      - thanks a ton
+      - thanks a million
+      - thank you loads
+      - thank you heaps
+      - thanks a whole bunch
+      - thanks a whole lot
+
+- intent: mood_great
+  examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+- intent: mood_unhappy
+  examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremely sad
+      - so saad
+      - so sad
+
+- intent: exercise_tips
+  examples: |
+      - exercise tips
+      - i want to know some exercise tips
+      - i want to know some exercise
+      - i want to know some exercise tips
+      - exercise tips
+      - exercise
+      - i want to know some exercise
+      - need some exercise tips
+      - need some exercise idea
+      - need exercise suggestion
+      - need exercise tips
+
+- intent: want_to_ask_question
+  examples: |
+      - i want to ask a question
+      - i want your help
+      - i want to know information on drugs
+      - help me bro
+      - i want to know dosage of drugs
+      - i want information of some drugs
+      - i want to know side effects of drugs
+      - help me please
+      - tell me something
+      - yes i have a question
+      - i want some drug information
+      - i want to know about a certain drug usage
+      - precautions of some drug
+      - side effect of some drug
+
+- intent: hospitals_near
+  examples: |
+      - hospital location near me
+      - hospital near me
+      - hospitals near me
+      - hospitals near
+      - hospitals
+      - hospitals near my location
+      - hospitals near my place
+      - hospitals near my home
+      - hospitals near my house
+      - hospitals near my area
+      - hospitals near my city
+      - hospitals near my town
+      - hospitals near my village
+      - hospitals near my district
+      - hospitals near my state
+
+- intent: health_tips
+  examples: |
+      - give me some health tips
+      - i want some health tips
+      - i need some health tips
+      - i want to know some health tips
+      - health tips
+      - suggest me health tips
+      - suggest me health
+      - suggest me some health tips
+      - tips health
+      - diet health tips
+      - diet tips
+
+- intent: not_well
+  examples: |
+      - I am not feeling well
+      - i feel sick
+      - i am sick
+      - i am not well
+
+- intent: well
+  examples: |
+      - i feel fine
+      - i am feeling fine
+      - i feel great
+      - i feel awesome
+
+- intent: small_duration
+  examples: |
+     - since morning
+     - since evening
+     - since night
+     - since yesterday
+     - one hours
+     - from morning
+     - from yesterday
+     - from last night
+     - from last evening
+     - from last afternoon
+     - from last morning
+     - from last night
+     - since yesterday
+     - since last night
+     - 1
+     - 2
+     - 3
+     - 1 hour
+     - 2 hours
+     - 3 hours
+     - two
+     - three
+     - four hours
+     - 4 hours
+     - 5 hours
+     - 6 hours
+     - five
+     - six
+     - more than four
+     - more than five
+     - more than 4
+     - more than 6
+     - more than 3
+     - less than one
+     - less than two
+     - less than three
+     - less than 1
+     - less than 2
+     - less than 3
+     - less than 1 day
+     - less than 24 hours
+     - 1 day
+     - one day
+     - day one
+    
+- intent: long_duration
+  examples: |
+     - more than 3 days
+     - 3days
+     - 4 days
+     - 5 days
+     - 6 days
+     - 7 days
+     - 3 day
+     - 2 days
+     - three day
+     - week
+     - 2 week
+     - 3 week
+     - 4 week
+     - 5 week
+     - 6 week
+     - more than
+     - 1 week
+     - month
+     - 2 month
+
+- intent: age_below_18
+  examples: |
+     - below 18
+     - below 10
+     - 10 years
+     - 18 years
+     - i am underage
+     - below 15
+     - age below 18
+     - below 5
+     - below 3
+     - 3 years
+     - 5 years
+     - kid
+     - child
+     - baby
+     - i am a toddler
+     - infant
+     - age below 5
+
+
+- intent: age_above_18
+  examples: |
+     - above 18
+     - above 10
+     - 20+
+     - i am adult
+     - i am above 60
+     - age above 18
+
+
+# Symtoms and Specialist
+- intent: ask_have_fever
+  examples: |
+       - yes i have a fever
+       - I have a fever
+       - fever
+       - feeling like fever
+       - experiencing fever
+       - headache
+       - I have a fever
+       - I am experiencing fever
+       - I've got a headache
+       - My body temperature has raised
+       - I am shivering
+       - I am feeling weak
+       - I have weakness in my body
+       - i am having fever
+       - fever
+
+- intent: ask_have_cold
+  examples: |
+      - yes i have a cold
+      - I have a cold
+      - cold
+      - I feel cold
+      - cold
+      - I have a cold
+      - My nose is choked
+      - nose choked
+      - My nose is itching
+      - nose itching
+      - My throat is itching
+      - throat itching
+      - My throat is paining
+      - i am having cold
+
+- intent: ask_have_alleries
+  examples: |
+      - yes i have a alleries
+      - I have allergies
+      - allergies
+      - allergie
+      - I have a running nose
+      - I have a blocked nose
+      - I have a sneezing
+      - I have a itching in my nose
+      - I have a itching in my throat
+      - I have a itching in my eyes
+      - I have a itching in my ears
+      - I have a itching in my skin
+      - I have a itching in my body
+      - I have a itching in my hands
+      - I have a itching in my legs
+      - itching in my feet
+      - itching in my fingers
+      - itching in my toes
+      - itching in my arms
+      - itching in my legs
+      - itching in my body
+      - itching in my skin
+      - itching in my head
+      - itching in my hair
+      - itching in my scalp
+
+- intent: ask_have_headache
+  examples: |
+      - yes i have a headache
+      - I have a headache
+      - headache
+      - I have a headache
+      - I am experiencing headache
+      - I've got a headache
+      - My head is aching
+      - My head is paining
+      - I have pain in my head
+      - I have a headache
+      - I am experiencing headache
+      - I've got a headache
+      - My head is aching
+      - My head is paining
+      - I have pain in my head
+      - i am having headache
+      - headache
+
+- intent: ask_symptom_head_whole
+  examples: |
+    - having whole
+    - having whole head
+    - having entire
+    - having entire head
+    - having all over
+    - having all over the head
+    - having full head
+    - both side
+    - both side of head
+    - both side of the head
+    - both side of head pain
+
+- intent: ask_symptom_head_sides
+  examples: |
+    - I have a nausea
+    - I've been vomiting a lot
+    - having Down Side
+    - Down Side
+    - sides
+    - sides of head
+    - side
+    - side of head
+    - bilateral
+    - bilateral head
+    - one-sided
+    - one side
+    - one-sided head
+    - temporal
+    - temporal areas
+    - both sides
+    - both sides of head
+    - lateral
+    - lateral sides
+
+- intent: ask_symptom_head_crown
+  examples: |
+    - having Up Side
+    - Top of the head
+    - crown
+    - crown of head
+    - crown area
+    - crown region
+    - crown of the head
+    - crown of head pain
+    - crown area pain
+    - upper head
+    - upper head area
+    - upper head region
+    - upper head pain
+    - upper head discomfort
+    - upper head area pain
+    - upper head area discomfort
+
+- intent: ask_symptom_head_eyes
+  examples: |
+    - eyes
+    - eye
+    - eye pain
+    - Around the eyes
+    - Around the eye
+    - Behind the eyes
+    - Around the eye pain
+    - eye discomfort
+    - eye area
+    - eye area pain
+    - eye area discomfort
+    - eye region
+    - eye region pain
+    - eye region discomfort
+    - eye strain
+    - eye strain pain
+    - eye strain discomfort
+    - eye strain area
+    - eye strain area pain
+    - eye strain area discomfort
+    - eye pressure
+
+- intent: ask_symptom_Cough
+  examples: |
+    - cough
+    - coughing
+    - coughing a lot
+    - Surround the chest
+    - Surround the chest pain
+    - Surround the chest discomfort
+    - Surround the chest area
+    - chest area pain
+    - having chest pain
+    - having cough
+
+- intent: fracture_sym
+  examples: |
+      - my hand is aching
+      - hand pain
+      - leg pain
+      - joint pain
+      - my leg is aching
+      - i have pain in hand
+      - my hand is paining
+      - my joint is aching
+
+- intent: fracture_accepted
+  examples: |
+      - yes
+      - yes i think it is fracture
+      - yes it is hurting
+      - it is bleeding
+      - blood is coming out
+
+- intent: qu_appointment
+  examples: |
+      - need doctor
+      - need a doctor
+      - need a specialist
+      - need a specialist doctor
+      - need a doctor for me
+      - need a specialist for me
+      - suggestion for doctor
+      - doctor suggestion
+      - doctor appointment
+      - appointment
+      - suggest doctor
+      - suggest me doctor
+      - suggest me a doctor
+      - suggest me a specialist
+      - suggest me a specialist doctor
+      - suggest doctor for me
+      - I want to book an Appointment
+      - book Appointment
+      - appointment with doctor
+      - doctor appointment
+      - i want to book appointment
+      - i want to book an appointment with doctor
+
+- intent: general_practitioner
+  examples: |
+      - General Practitioner
+      - general practitioner
+      - Practitioner
+      - general physician
+      - general doctor
+      - medical practitioner
+      - physician
+      - family doctor
+      - health practitioner
+      - general practitioner
+
+- intent: ent_specialist
+  examples: |
+      - ENT Specialist
+      - ent specialist
+      - ent doctor
+      - e n t specialist
+      - e n t doctor
+      - ear specialist
+      - ear doctor
+      - nose specialist
+      - nose doctor
+      - throat specialist
+      - throat doctor
+      - ear nose throat specialist
+      - ear nose throat doctor
+
+- intent: homeopathy
+  examples: |
+      - homeopathy specialist
+      - homeopathy doctor
+      - ayush homoeopath
+      - homoeopath
+      - homeopathic
+      - homoeopathic
+      - homoeopaths
+      - Homeopathy
+
+- intent: ayurveda
+  examples: |
+      - Ayurveda
+      - ayurveda doctor
+      - ayurveda
+      - ayush ayurveda
+      - traditional
+      - ayurvedic
+      - ayurvedic specialist
+      - ayurveda specialist
+
+- intent: pediatrician
+  examples: |
+      - Pediatrician
+      - pediatrician
+      - pediatricians
+      - pediatrist
+      - child specialist
+      - children specialist
+      - child doctor
+      - children doctor
+
+- intent: dermatologist
+  examples: |
+      - Dermatologist
+      - dermatology
+      - Dermatologic
+
+- intent: dentist
+  examples: |
+      - dentist
+      - tooth doctor
+      - teeth doctor
+      - tooth pain
+      - teeth pain
+      - pain in teeth
+      - Dentist
+
+- intent: gynaecologist
+  examples: |
+      - Gynaecologist
+      - gynaecologist
+      - pregnant
+      - period cramps
+      - mood swings
+      - periods
+      - abdominal pain
+      - labour pain
+      - menstrual cycle
+      - puberty
+      - blood transfusion
+      - breaking of water
+
+- intent: psychiatrist
+  examples: |
+      - psychiatrist
+      - psycho
+      - mental problem
+      - mental
+      - brain
+      - Psychiatrist
+
+- intent: cardiologist
+  examples: |
+      - Cardiologist
+      - I need a cardiologist
+      - heart specialist
+      - doctor for heart disease
+      - looking for a cardiologist
+
+- intent: neurologist
+  examples: | 
+      - Neurologist
+      - neurologist
+      - neuro doc
+      - brain doctor
+      - brain specialist
+      - find me a neurologist
+      - specialist in the nervous system
+      - doctor for brain health
+      - neurology expert
+
+- intent: orthopedic_surgeon
+  examples: |
+      - Orthopedic Surgeon
+      - Orthopedic
+      - orthopedic
+      - ortho doctor
+      - I need an orthopedic surgeon
+      - bone doctor
+      - joint and ligament specialist
+      - orthopedic care
+
+- intent: endocrinologist
+  examples: |
+      - Endocrinologist
+      - endocrinologist
+      - hormone doctor
+      - looking for an endocrinologist
+      - hormone specialist
+      - thyroid problem doctor
+      - doctor for diabetes
+
+- intent: gastroenterologist
+  examples: |
+      - Gastroenterologist
+      - gastroenterologist
+      - gas doctor
+      - need a gastroenterologist
+      - stomach doctor
+      - digestive health specialist
+      - doctor for GI tract
+
+- intent: oncologist
+  examples: |
+      - searching for an oncologist
+      - cancer treatment specialist
+      - doctor for cancer care
+      - oncology expert
+      - Oncologist
+      - oncologist
+
+- intent: rheumatologist
+  examples: |
+      - I require a rheumatologist
+      - arthritis specialist
+      - autoimmune disease doctor
+      - rheumatism treatment
+      - Rheumatologist
+      - rheumatologist
+
+- intent: urologist
+  examples: |
+      - need a urologist
+      - urinary tract specialist
+      - doctor for kidney health
+      - bladder issues doctor
+      - Urologist
+      - urologist
+
+- intent: pulmonologist
+  examples: |
+      - looking for a pulmonologist
+      - lung specialist
+      - doctor for respiratory problems
+      - chest physician
+      - Pulmonologist
+      - pulmonologist
+
+- intent: nephrologist
+  examples: |
+      - I need a nephrologist
+      - kidney specialist
+      - doctor for renal issues
+      - treatment for kidney disease
+      - Nephrologist
+      - nephrologist
+
+- intent: other_specialist
+  examples: |
+      - I need a different type of specialist
+      - not listed specialist
+      - doctor for a rare condition
+      - unique medical condition specialist
+      - Other Specialist
+      - other specialist
+      - unique medical condition specialist
+      - rare condition specialist
+      - different type of specialist
+      - not listed specialist
+      - different specialist
+      - unique specialist
+      - rare specialist
+
+
+
+
+
+- intent: confirm_appointment
+  examples: |
+      - Confirm
+      - confirm
+      - confirm appointment
+
+- intent: cancel_appointment
+  examples: |
+      - Cancel
+      - cancel
+      - cancel appointment
+
+

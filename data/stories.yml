@@ -1,0 +1,328 @@
+i wversion: "3.1"
+
+
+stories:
+
+  - story: exercise path
+    steps:
+      - intent: exercise_tips
+      - action: utter_exercise_tips
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: FEEDBACK WITH Negetive
+    steps:
+      - intent: mood_unhappy
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_wrong_data
+      - action: utter_goodbye
+
+  - story: FEEDBACK WITH Positive  
+    steps:
+      - intent: mood_great
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: well_&_not_well path
+    steps:
+      - intent: not_well
+      - action: utter_not_well
+      - intent: well
+      - action: utter_well
+
+
+# Infusion of symptoms and diseases.
+
+  - story: Influenza Diagnosis
+    steps:
+      - intent: ask_have_fever
+      - action: utter_symptoms
+      - intent: ask_have_cold
+      - action: utter_ask_duration
+      - intent: small_duration
+      - action: utter_additional_symptoms
+      - intent: ask_have_alleries
+      - action: utter_diagnosis_influenza
+      - action: utter_anything_else
+
+  - story: Common Cold Diagnosis
+    steps:
+      - intent: ask_have_cold
+      - action: utter_symptoms
+      - intent: ask_have_fever
+      - action: utter_ask_allergies
+      - intent: deny
+      - action: utter_ask_duration
+      - intent: small_duration
+      - action: utter_diagnosis_common_cold
+      - action: utter_anything_else
+
+  - story: Migraine Diagnosis 1
+    steps:
+      - intent: ask_have_headache
+      - action: utter_headache_type
+      - intent: ask_symptom_head_sides
+      - action: utter_migraine_symptom_2
+      - intent: affirm
+      - action: utter_having_cold_symptom
+      - intent: deny
+      - action: utter_diagnosis_migraine
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Stress or Tension Diagnosis
+    steps:
+      - intent: ask_have_headache
+      - action: utter_headache_type
+      - intent: ask_symptom_head_whole
+      - action: utter_migraine_symptom_2
+      - intent: deny
+      - action: utter_having_cold_symptom
+      - intent: deny
+      - action: utter_diagnosis_Stress
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Pneumonia or Bronchitis
+    steps:
+      - intent: ask_symptom_Cough
+      - action: utter_additional_symptoms
+      - intent: ask_have_fever
+      - action: utter_having_Sputum_symptom
+      - intent: affirm
+      - action: utter_ask_age
+      - intent: age_below_18
+      - action: utter_ask_duration
+      - intent: long_duration
+      - action: utter_diagnosis_Pneumonia
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: COVID-19 Diagnosis
+    steps:
+      - intent: ask_symptom_Cough
+      - action: utter_additional_symptoms
+      - intent: ask_have_headache
+      - action: utter_having_Covit19_symptom
+      - intent: affirm
+      - action: utter_additional_symptoms
+      - intent: ask_have_fever
+      - action: utter_ask_duration
+      - intent: long_duration
+      - action: utter_diagnosis_COVID_19
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: fracture_sym path
+    steps:
+      - intent: fracture_sym
+      - action: utter_fracture_sym
+      - intent: fracture_accepted
+      - action: utter_fracture_details
+      - intent: affirm
+      - action: utter_orthopedic_hospital_near
+
+
+
+# Appointment Booking Path Parameters.
+
+  - story: Suggest_near_me_hospitals
+    steps:
+      - intent: hospitals_near
+      - action: utter_hospitals_near
+
+  - story: appointment_booking path
+    steps:
+      - intent: qu_appointment
+      - action: utter_suggest_me_specialist
+      - intent: general_practitioner
+      - action: utter_general_practitioner
+      - action: utter_hospitals_near
+
+  - story: ent_appointment path
+    steps:
+      - intent: ent_specialist
+      - action: utter_ent_specialist
+      - intent: confirm_appointment
+      - action: utter_ent_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: homeopathy_appointment path
+    steps:
+      - intent: homeopathy
+      - action: utter_homeopathy
+      - intent: confirm_appointment
+      - action: utter_homeopathy_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: ayurveda_appointment path
+    steps:
+      - intent: ayurveda
+      - action: utter_ayurveda
+      - intent: confirm_appointment
+      - action: utter_ayurveda_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: pediatrician_appointment path
+    steps:
+      - intent: pediatrician
+      - action: utter_pediatrician
+      - intent: confirm_appointment
+      - action: utter_pediatrician_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: dermatologist_appointment path
+    steps:
+      - intent: dermatologist
+      - action: utter_dermatologist
+      - intent: confirm_appointment
+      - action: utter_dermatologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: dentist_appointment path
+    steps:
+      - intent: dentist
+      - action: utter_dentist
+      - intent: confirm_appointment
+      - action: utter_dentist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: gynaecologist_appointment path
+    steps:
+      - intent: gynaecologist
+      - action: utter_gynaecologist
+      - intent: confirm_appointment
+      - action: utter_gynaecologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: psychiatrist_appointment path
+    steps:
+      - intent: psychiatrist
+      - action: utter_psychiatrist
+      - intent: confirm_appointment
+      - action: utter_psychiatrist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: cardiologist_appointment_path
+    steps:
+      - intent: cardiologist
+      - action: utter_cardiologist
+      - intent: confirm_appointment
+      - action: utter_cardiologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: neurologist_appointment_path
+    steps:
+      - intent: neurologist
+      - action: utter_neurologist
+      - intent: confirm_appointment
+      - action: utter_neurologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: orthopedic_surgeon_appointment_path
+    steps:
+      - intent: orthopedic_surgeon
+      - action: utter_orthopedic_surgeon
+      - intent: confirm_appointment
+      - action: utter_orthopedic_surgeon_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: endocrinologist_appointment_path
+    steps:
+      - intent: endocrinologist
+      - action: utter_endocrinologist
+      - intent: confirm_appointment
+      - action: utter_endocrinologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: gastroenterologist_appointment_path
+    steps:
+      - intent: gastroenterologist
+      - action: utter_gastroenterologist
+      - intent: confirm_appointment
+      - action: utter_gastroenterologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: oncologist_appointment_path
+    steps:
+      - intent: oncologist
+      - action: utter_oncologist
+      - intent: confirm_appointment
+      - action: utter_oncologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: rheumatologist_appointment_path
+    steps:
+      - intent: rheumatologist
+      - action: utter_rheumatologist
+      - intent: confirm_appointment
+      - action: utter_rheumatologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: urologist_appointment_path
+    steps:
+      - intent: urologist
+      - action: utter_urologist
+      - intent: confirm_appointment
+      - action: utter_urologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: pulmonologist_appointment_path
+    steps:
+      - intent: pulmonologist
+      - action: utter_pulmonologist
+      - intent: confirm_appointment
+      - action: utter_pulmonologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: nephrologist_appointment_path
+    steps:
+      - intent: nephrologist
+      - action: utter_nephrologist
+      - intent: confirm_appointment
+      - action: utter_nephrologist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled
+
+  - story: other_specialist_appointment_path
+    steps:
+      - intent: other_specialist
+      - action: utter_other_specialist
+      - intent: confirm_appointment
+      - action: utter_other_specialist_appointment_confirmed
+      - intent: cancel_appointment
+      - action: utter_appointment_cancelled

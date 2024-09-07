@@ -1,0 +1,436 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - affirm
+  - deny
+  - not_well
+  - mood_unhappy
+  - mood_great
+  - small_duration
+  - long_duration
+  - exercise_tips
+  - ask_have_headache
+  - ask_symptom_head_sides
+  - ask_symptom_head_whole
+  - ask_symptom_Cough
+  - age_below_18
+  - age_above_18
+  - ask_have_alleries
+  - fracture_sym
+  - well 
+  - ask_have_fever # - inform_symptoms
+  - ask_have_cold
+  - fracture_accepted
+  - qu_appointment
+  - general_practitioner 
+  - ent_specialist # - inform_specialist
+  - homeopathy
+  - ayurveda
+  - pediatrician
+  - dermatologist
+  - dentist
+  - gynaecologist
+  - psychiatrist
+  - cardiologist
+  - neurologist
+  - orthopedic_surgeon
+  - endocrinologist
+  - gastroenterologist
+  - oncologist
+  - rheumatologist
+  - urologist
+  - pulmonologist
+  - nephrologist
+  - other_specialist
+  - confirm_appointment
+  - cancel_appointment
+  - say_thanks
+  - want_to_ask_question
+  - health_tips
+  - hospitals_near
+  - out_of_scope
+  - nlu_fallback
+  - excersize_tips
+
+actions:
+  - action_new_sym
+  - utter_greet
+  - utter_question
+  - utter_goodbye
+  - utter_iamabot
+  - utter_not_well
+  - utter_well
+  - utter_fracture_sym
+  - utter_fracture_details
+  - utter_headache_type
+  - utter_hospitals_near
+  - utter_orthopedic_hospital_near
+  - utter_suggest_me_specialist
+  - utter_general_practitioner
+  - utter_ent_specialist
+  - utter_ent_appointment_confirmed
+  - utter_homeopathy
+  - utter_homeopathy_appointment_confirmed
+  - utter_ayurveda
+  - utter_ayurveda_appointment_confirmed
+  - utter_pediatrician
+  - utter_pediatrician_appointment_confirmed
+  - utter_dermatologist
+  - utter_dermatologist_appointment_confirmed
+  - utter_dentist
+  - utter_dentist_appointment_confirmed
+  - utter_gynaecologist
+  - utter_gynaecologist_appointment_confirmed
+  - utter_psychiatrist
+  - utter_psychiatrist_appointment_confirmed
+  - utter_cardiologist
+  - utter_neurologist
+  - utter_orthopedic_surgeon
+  - utter_endocrinologist
+  - utter_gastroenterologist
+  - utter_oncologist
+  - utter_rheumatologist
+  - utter_urologist
+  - utter_pulmonologist
+  - utter_nephrologist
+  - utter_other_specialist
+  - utter_cardiologist_appointment_confirmed
+  - utter_neurologist_appointment_confirmed
+  - utter_orthopedic_surgeon_appointment_confirmed
+  - utter_endocrinologist_appointment_confirmed
+  - utter_gastroenterologist_appointment_confirmed
+  - utter_oncologist_appointment_confirmed
+  - utter_rheumatologist_appointment_confirmed
+  - utter_urologist_appointment_confirmed
+  - utter_pulmonologist_appointment_confirmed
+  - utter_nephrologist_appointment_confirmed
+  - utter_other_specialist_appointment_confirmed
+  - utter_appointment_cancelled
+  - utter_please_rephrase
+  - utter_health_tips
+  - utter_welcome
+  - utter_anything_else
+  - utter_ask_question
+  - utter_did_that_help
+  - utter_symptoms
+  - utter_head_whole_symptom
+  - utter_migraine_symptom_2
+  - utter_having_cold_symptom
+  - utter_having_Sputum_symptom
+  - ask_symptom_head_eyes
+  - ask_symptom_head_crown
+  - utter_having_Dry_Cough_symptom
+  - utter_ask_duration
+  - utter_ask_age
+  - utter_ask_allergies
+  - utter_additional_symptoms
+  - utter_having_Covit19_symptom
+  - utter_wrong_data
+  - utter_diagnosis_Stress
+  - utter_diagnosis_migraine
+  - utter_diagnosis_EyeGlassPower
+  - utter_diagnosis_influenza
+  - utter_diagnosis_common_cold
+  - utter_diagnosis_Pneumonia
+  - utter_diagnosis_COVID_19
+  - utter_exercise_tips
+  - utter_thanks
+
+
+responses:
+  utter_greet:
+    - text: "Hey!👋 AI Assistant here, How can i help you today?"
+    - text: "Hi!👋 I am Medibot, How can i help you today?"
+    - text: "Hi,👋 i am medicbot. how can i help you?"
+    - text: Hi and Welcome!👋 Medibot AI Assistant is ready to help you here.
+    - text: "Hey!👋 How are you feeling today?"
+    - text: Hi!👋 How can I help?
+    - text: Hello!👋 What are you looking for?
+    - text: Hello!👋 How can I help you today?
+  
+  utter_question:
+    - text: "Please ask me about common dissage, symptom, doctors, nearest hospital, health tips!"
+
+  utter_please_rephrase:
+    - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+    - text: Sorry! I didn't get what you said. Ask me about Healthcare
+    - text: You are going off topic! Ask me about Healthcare
+    - text: Sorry! I am not trained for this. Ask me about Healthcare
+
+  utter_goodbye:
+     - text: "Great helping You! Bye."
+     - text: "Bye"
+     - text: Goodbye! Take care
+     - text: See Ya
+     - text: Enjoy your day!
+     - text: Sayonara!
+
+  utter_welcome:
+    - text: "You're Welcome!😊"
+    - text: "Great, Carry on!😊"
+    - text: "Happy to Help!😊"
+    - text: "You're Welcome!😊 <br> Is there anything else I can help you with?"
+    - text: "Great, Carry on!😊 <br> Is there anything else I can help you with?"
+    - text: Happy to Help!😊<br> Is there anything else I can help you with?"
+
+  utter_anything_else:
+    - text: "Is there anything else I can help you with?"
+  
+  utter_ask_question:
+    - text: Ok Sure, you may continue to ask me?
+    - text: Ok, go ahead and ask me?
+    - text: Ok, what's your query?
+    - text: Ok, what's your question?
+    - text: Ok, what's your problem?
+    - text: Ok, what's your issue?
+
+  utter_iamabot:
+    - text: "I'm there, your Virtual Healthcare Assistant here."
+
+  utter_health_tips: 
+    - text: "Sure! Here are some health tips for you: <br>1. Drink plenty of water. <br>2. Eat a balanced diet. <br>3. Get enough sleep. <br>4. exercise regularly. <br>5. Avoid smoking and limit alcohol. <br>6. Manage stress. <br>7. Maintain a healthy weight. <br>8. Wash your hands frequently. <br>9. Get regular check-ups. <br>10. Avoid exposure to germs. <br>11. Avoid exposure to pollution. <br>12. Avoid exposure to chemicals. <br>13. Avoid exposure to radiation. <br>14. Avoid exposure to loud noise. <br>15. Avoid exposure to extreme temperatures."
+
+# Excersize tips for user
+
+  utter_exercise_tips:
+    - text: "Sure! Here are some exercise tips for you: <br>1. Walking. <br>2. Swimming. <br>3. Cycling. <br>4. Running. <br>5. Yoga. <br>6. Pilates. <br>7. Aerobics. <br>8. Zumba. <br>9. Weight Training. <br>10. Crossfit. <br>11. Kickboxing. <br>12. Martial Arts. <br>13. Dance. <br>14. Hiking. <br>15. Climbing."
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+    - text: "Did that help?"
+    - text: "Did that solve your problem?"
+    - text: "Did that solve your query?"
+
+  utter_wrong_data:
+    - text: Thanks for your feedback.
+    - text: Sorry! I will try to be better next time. Anything else?
+    - text: Okay! I will try to learn from this. Anything else?
+
+
+#Ask about durations of symptoms
+
+  utter_ask_duration:
+    - text: "Duration of your prevailing symptoms"
+  
+  utter_ask_age:
+   - text: "Which age group you belong too? below 18 or above 18"
+   - text: "What is your age ? below 18 or above 18"
+
+  utter_ask_allergies:
+    - text: "Do you have any allergies? Yes or No?"
+
+
+#Ask about the symptoms
+
+  utter_suggest_me_specialist:
+    - text: "Sure! I can help you with that. <br> Can you specify the Speciality of doctor you want to book an appointment with? <br> 1. General Practitioner <br> 2. ENT Specialist <br> 3. Homeopathy <br> 4. Ayurveda <br> 5. Pediatrician <br> 6. Dermatologist <br> 7. Dentist <br> 8. Gynaecologist <br>  9. Psychiatrist <br>10. Cardiologist <br> 11. Neurologist <br>12. Orthopedic Surgeon <br>13. Endocrinologist <br>14. Gastroenterologist <br>15. Oncologist <br> 16. Rheumatologist <br>17. Urologist <br>18. Pulmonologist <br>19. Nephrologist <br>20. Other Specialist <br>"
+
+  utter_not_well:
+    - text: "Okay, can you tell me what's wrong? what are your symptoms?"
+
+  utter_well:
+    - text: "Great to know. how can i assist you then?"
+
+  utter_fracture_sym:
+    - text: "Okay, did you get hurt, or it is a sudden aching."
+
+  utter_fracture_details:
+    - text: "Ok, is there a swelling or a physical deformity or bleeding at the aching region. Yes or No?"
+
+  utter_additional_symptoms:
+    - text: "Do you have any other symptoms?"
+
+  utter_symptoms:
+    - text: "Can you tell me more about your symptoms?"
+ 
+
+
+  utter_headache_type:
+    - text: "Which area of the head does it hurt the most? Whole | Crown | Around the eyes | Forehead | Back of the head | Neck | Down Side | Behind the eyes | Top of the head | One side | Both sides."
+
+  utter_head_whole_symptom:
+    - text: "In Which Side you are having the most pain?"
+
+  utter_migraine_symptom_2:
+    - text: "Are you having Light, smell, Sound Sensitivity? reply as Yes or No ?"
+
+  utter_having_cold_symptom:
+    - text: "Are you having Cold issues? Reply as Yes or No ?"
+
+  utter_having_Sputum_symptom:
+    - text: "Are you having Sputum? Reply as Yes or No ?"
+
+  utter_having_Dry_Cough_symptom:
+    - text: "Are you having Sputum? Reply as Yes or No ?"
+
+  utter_having_Covit19_symptom:
+    - text: "Are you having shortness of breat, lost smell or taste, body or muscle aches? Reply as Yes or No ?"
+  
+
+  
+
+
+
+# Diagnosis of Dissage according to symptoms.
+
+  utter_diagnosis_Stress:
+    - text: "This usually indicates that you are having Stress. Stress can cause a number of physical symptoms, including headaches, backaches, and an inability to sleep. Better to consult to doctor. <br> Advice: <br> 1. Need proper sleep. <br> 2. Reduce hard work. <br> 3. Take a break from work. <br> 4. Take a vacation. <br> 5. Take a day off. <br> 6. Take a break from work."
+
+  utter_diagnosis_migraine:
+    - text: "This usually indicates that you are having  Migraine or Sinus. If you are having Migraine headaches are typically characterized by intense pain on one side of the head, usually accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Better to consult to doctor."
+
+  utter_diagnosis_EyeGlassPower:
+    - text: "This usually indicates that you are having Eye Glass Power. For more information, you should consult an eye specialist."
+
+  utter_diagnosis_influenza:
+    - text: "Based on the symptoms, it might be Influenza(flu). <br><br> Advice: <br> You should take a spoon full of benadryl after your meal. If you feel better then continue for 2 more days. If you don't feel better then consult a doctor."
+
+  utter_diagnosis_common_cold:
+    - text: "Based on the symptoms, it seems like a Common Cold. <br><br> Advice: <br> You should take a spoon full of benadryl after your meal. If you feel better then continue for 2 more days. If you don't feel better then consult a doctor."
+
+  utter_diagnosis_Pneumonia:
+    - text: "Based on the symptoms, it might be Pneumonia. <br> Advice: <br> If you don't feel better then consult a doctor."
+
+  utter_diagnosis_COVID_19: 
+    - text: "Based on the symptoms, it might be COVID-19. <br> Advice: <br> 1. get lots of rest. <br> 2.avoid dehydration<br> 2. take paracetamol or ibuprofen if you feel uncomfortable. <br> If you don't feel better then consult a doctor."
+
+
+# Ask about hospitals near me.
+
+  utter_hospitals_near:
+    - text: Here is google map - <a class="map" href="https://www.google.com/maps/search/hospitals+near+me/" target="_blank">View Hospitals </a> <br> <br> Or Scan QR Code to view in your mobile. <br> <img src="static/img/QR.png" alt="Hospitals Near Me" width="230" height="180">
+
+  utter_orthopedic_hospital_near:
+    - text: Okay, it is a common symptom of fracture, you should consult a doctor. <br> For an orthopedic hospital near you, <br> <a class="map" href='https://www.google.com/maps/search/orthopedic+hospital+near+me/' target='_blank'>View on Google Maps</a>.
+
+
+
+
+
+  utter_general_practitioner:
+    - text: "You may consult any medical professional in your locality."
+
+  utter_ent_specialist:
+    - text: "Here is the ENT Doctor available near you. <br>Dr. Mahesh Meda. <br>28 years experience overall. <br>Consultation fee at clinic £600. <br>Liverpool one . <br>Phone Number: 9482252945 <br>Timings: Monday to Friday, 11:00AM to 03:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_ent_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Mahesh Meda. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br You can download your appointment details here! <br> <a href='/static/Media/Appointments/ENT-appointment.png' download='ENT Appointment Details.png'> <img src='/static/Media/Appointments/ENT-appointment.png' alt='ENT Appointment Details' width='325' height='225'> </a>"
+
+  utter_homeopathy:
+    - text: "Here is the Homeopathy Doctor available near you. <br>Dr. Charlotte Adams. <br>20 years experience overall. <br>Consultation fee at clinic £80. <br>Address: 12 Harley Street, London, W1G 9PG. <br>Phone Number: 020 7946 0364 <br>Timings: Monday to Friday, 09:30AM to 06:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_homeopathy_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Radhika Bhonsle. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br> You can download your appointment details here! <br><a href='/static/Media/Appointments/Homeopathy-appointmnent.png' download='Homeopathy Appointment Details.png'> <img src='/static/Media/Appointments/Homeopathy-appointmnent.png' alt='Homeopathy Appointment Details' width='325' height='225'> </a>"
+
+  utter_ayurveda:
+    - text: "Here is the Ayurvedic specialist available near you. <br>Dr. Sandhya Rani. <br>16 years experience overall. <br>Consultation fee at clinic £500. <br>Address: Sector 7, HSR Layout, Bangalore. <br>Phone Number: 9147258360 <br>Timings: Monday to Friday, 09:00AM to 10:00PM. <br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_ayurveda_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Sandhya Rani. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br> You can download your appointment details here! <br><a href='/static/Media/Appointments/Ayurveda-appointment.png' download='Ayurveda Appointment Details.png'> <img src='/static/Media/Appointments/Ayurveda-appointment.png' alt='Ayurveda Appointment Details' width='325' height='225'> </a>"
+
+  utter_pediatrician:
+    - text: "Here is the Pediatrician available near you. <br>Dr. Varsha Saxena. <br>31 years experience overall. <br>Consultation fee at clinic £550. <br>Address: Sector 4, HSR Layout, Bangalore. <br>Phone Number: 9886442742 <br>Timings: Monday to Friday, 10:00AM to 01:30PM. <br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_pediatrician_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Varsha Saxena. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br> You can download your appointment details here! <br><a href='/static/Media/Appointments/Pediatrician-appointment.png' download='Pediatrician Appointment Details.png'> <img src='/static/Media/Appointments/Pediatrician-appointment.png' alt='Pediatrician Appointment Details' width='325' height='225'> </a>"
+
+  utter_dermatologist:
+    - text: "Here is the Dermatologist available near you. <br> Dr. Sarah Johnson <br>9 years experience overall. <br> Consultation fee at clinic £600. <br>Address: The Dermatology Clinic, 233 High Holborn, London, WC1V 7DN. <br> Phone Number: 020 3411 8969 <br>Timings: Mon-Fri, 09:00AM - 06:00PM. <br> Do you want to Book the appointment? <br> Reply with Confirm or Cancel."
+
+  utter_dermatologist_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Namrata Singh. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br> You can download your appointment details here! <br><a href='/static/Media/Appointments/Dermatologist-appointment.png' download='Dermatologist Appointment Details.png'> <img src='/static/Media/Appointments/Dermatologist-appointment.png' alt='Dermatologist Appointment Details' width='325' height='225'> </a>"
+
+  utter_dentist:
+    - text: "Here is the Dentist available near you. <br>Dr. Bharath Shetty. <br>23 years experience overall. <br>Consultation fee at clinic £300. <br>Address: Liverppol one. <br>Phone Number: 0750000000 <br>Timings: Monday to Friday, 10:00AM to 07:30PM. <br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_dentist_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Bharath Shetty. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br> You can download your appointment details here! <br><a href='/static/Media/Appointments/Dentist-appointment.png' download='Dentist Appointment Details.png'> <img src='/static/Media/Appointments/Dentist-appointment.png' alt='Dentist Appointment Details' width='325' height='225'> </a>"
+
+  utter_gynaecologist:
+    - text: "Here is the Gynaecologist available near you. <br>Dr. Rekha Prashanth. <br>28 years experience overall. <br>Consultation fee at clinic £600. <br>Liverpool. <br>Phone Number: 8047489446 <br>Timings: Monday to Friday, 10:00AM to 07:30PM. <br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_gynaecologist_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Rekha Prashanth. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br> You can download your appointment details here! <br><a href='/static/Media/Appointments/Gynaecologist-appointment.png' download='Gynaecologist Appointment Details.png'> <img src='/static/Media/Appointments/Gynaecologist-appointment.png' alt='Gynaecologist Appointment Details' width='325' height='225'> </a>"
+
+  utter_psychiatrist:
+    - text: "Here is the Psychiatrist available near you. <br>Dr. Venkatesh Babu. <br>16 years experience overall. <br>Consultation fee at clinic £1000. <br>Address:Liverpool one. <br>Phone Number: 6366369911 <br>Timings: Monday to Friday, 10:00AM to 07:30PM. <br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_psychiatrist_appointment_confirmed:
+    - text: "Great!😊 Your appointment is confirmed with Dr. Namrata Singh. <br>You can visit the clinic as per your convenience and this appointment is valid only for next 1 week (excluding weekends). After one week you need to reregister your appointment. <br> You can download your appointment details here! <br><a href='/static/Media/Appointments/Psychiatrist-appointment.png' download='Psychiatrist Appointment Details.png'> <img src='/static/Media/Appointments/Psychiatrist-appointment.png' alt='Psychiatrist Appointment Details' width='325' height='225'> </a>"
+
+  utter_cardiologist:
+    - text: "Here is the Cardiologist available near you. <br>Dr. Edward Jenkins. <br>25 years experience overall. <br>Consultation fee at clinic £150. <br>Address: 35 Wimpole Street, London, W1G 8GP. <br>Phone Number: 020 7946 0992 <br>Timings: Monday to Friday, 08:00AM to 05:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_neurologist:
+    - text: "Here is the Neurologist available near you. <br>Dr. Fiona McCarthy. <br>22 years experience overall. <br>Consultation fee at clinic £200. <br>Address: 48 Queen Anne Street, London, W1G 9JJ. <br>Phone Number: 020 7946 0567 <br>Timings: Monday to Friday, 09:00AM to 04:30PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_orthopedic_surgeon:
+    - text: "Here is the Orthopedic Surgeon available near you. <br>Dr. Simon Grant.   <br>18 years experience overall. <br>Consultation fee at clinic £170. <br>Address: 16 Devonshire Street, London, W1G 7AF. <br>Phone Number: 020 7946 0688 <br>Timings: Monday to Friday, 10:00AM to 06:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_endocrinologist:
+    - text: "Here is the Endocrinologist available near you. <br>Dr. Lucy Williams. <br>15 years experience overall. <br>Consultation fee at clinic £120. <br>Address: 10 Harley Street, London, W1G 9PF. <br>Phone Number: 020 7946 0221 <br>Timings: Monday to Friday, 09:00AM to 05:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_gastroenterologist:
+     - text: "Here is the Gastroenterologist available near you. <br>Dr. Andrew Thompson. <br>20 years experience overall. <br>Consultation fee at clinic £130. <br>Address: 22 Harley Street, London, W1G 9PL. <br>Phone Number: 020 7946 0018 <br>Timings: Monday to Friday, 10:00AM to 05:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_oncologist:
+     - text: "Here is the Oncologist available near you. <br>Dr. Natalie Cohen. <br>23 years experience overall. <br>Consultation fee at clinic £250. <br>Address: 55 Harley Street, London, W1G 8QR. <br>Phone Number: 020 7946 0543 <br>Timings: Monday to Friday, 09:00AM to 04:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_rheumatologist:
+     - text: "Here is the Rheumatologist available near you. <br>Dr. Helen Wright. <br>19 years experience overall. <br>Consultation fee at clinic £110. <br>Address: 72 Harley Street, London, W1G 7HG. <br>Phone Number: 020 7946 0522 <br>Timings: Monday to Friday, 09:00AM to 05:30PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_urologist:
+     - text: "Here is the Urologist available near you. <br>Dr. Mark Lewis. <br>21 years experience overall. <br>Consultation fee at clinic £140. <br>Address: 30 Harley Street, London, W1G 9PW. <br>Phone Number: 020 7946 0345 <br>Timings: Monday to Friday, 08:30AM to 06:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_pulmonologist:
+    - text: "Here is the Pulmonologist available near you. <br>Dr. Rachel King. <br>17 years experience overall. <br>Consultation fee at clinic £160. <br>Address: 25 Wimpole Street, London, W1G 8GL. <br>Phone Number: 020 7946 0377 <br>Timings: Monday to Friday, 10:00AM to 05:00PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+
+  utter_nephrologist:
+    - text: "Here is the Nephrologist available near you. <br>Dr. Steven Clarke. <br>22 years experience overall. <br>Consultation fee at clinic £190. <br>Address: 19 Harley Street, London, W1G 9QJ. <br>Phone Number: 020 7946 0584 <br>Timings: Monday to Friday, 09:00AM to 04:30PM. <br><br>Do you want to Book the appointment? <br> Reply with confirm or cancel."
+    
+  utter_other_specialist:
+    - text: "If you're looking for a specialist not listed above, please specify the type of specialist you're seeking, and I'll do my best to assist you. <br><br> Reply with the type of specialist or cancel."
+
+  utter_cardiologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Edward Jenkins, Cardiologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 35 Wimpole Street, London, W1G 8GP. Phone: 020 7946 0992. We wish you good health."
+
+  utter_neurologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Fiona McCarthy, Neurologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 48 Queen Anne Street, London, W1G 9JJ. Phone: 020 7946 0567. We are here to assist you."
+
+  utter_orthopedic_surgeon_appointment_confirmed:
+    - text: "Your appointment with Dr. Simon Grant, Orthopedic Surgeon, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 16 Devonshire Street, London, W1G 7AF. Phone: 020 7946 0688. Your health is our priority."
+
+  utter_endocrinologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Lucy Williams, Endocrinologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 10 Harley Street, London, W1G 9PF. Phone: 020 7946 0221. We're committed to providing you the best care."
+
+  utter_gastroenterologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Andrew Thompson, Gastroenterologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 22 Harley Street, London, W1G 9PL. Phone: 020 7946 0018. Your digestive health is our priority."
+
+  utter_oncologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Natalie Cohen, Oncologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 55 Harley Street, London, W1G 8QR. Phone: 020 7946 0543. Together, we fight for your health."
+
+  utter_rheumatologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Helen Wright, Rheumatologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 72 Harley Street, London, W1G 7HG. Phone: 020 7946 0522. Let's work towards your mobility and comfort."
+
+  utter_urologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Mark Lewis, Urologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 30 Harley Street, London, W1G 9PW. Phone: 020 7946 0345. We're here to support your urinary health."
+
+  utter_pulmonologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Rachel King, Pulmonologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 25 Wimpole Street, London, W1G 8GL. Phone: 020 7946 0377. Your respiratory health is our utmost concern."
+
+  utter_nephrologist_appointment_confirmed:
+    - text: "Your appointment with Dr. Steven Clarke, Nephrologist, has been confirmed for today, [Today's Date], at [Appointment Time]. Location: 19 Harley Street, London, W1G 9QJ. Phone: 020 7946 0584. We're dedicated to caring for your kidney health."
+
+  utter_other_specialist_appointment_confirmed:
+    - text: "Your appointment with the specialist has been confirmed for today, [Today's Date], at [Appointment Time]. We will provide you with the specialist's details shortly. Thank you for trusting our care."
+
+  utter_appointment_cancelled:
+    - text: "Cool! Have a great day.😊 <br> Do you have any other questions?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,186 @@
+[
+  {
+    "text": "great",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.44324132800102234
+    }
+  },
+  {
+    "text": "perfect",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.48380908370018005
+    }
+  },
+  {
+    "text": "thanks",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5671567320823669
+    }
+  },
+  {
+    "text": "thank you",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5741047859191895
+    }
+  },
+  {
+    "text": "thank you very much",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5756598711013794
+    }
+  },
+  {
+    "text": "thanks a lot",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5835879445075989
+    }
+  },
+  {
+    "text": "thank you so much",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5549659132957458
+    }
+  },
+  {
+    "text": "thanks a bunch",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5980440378189087
+    }
+  },
+  {
+    "text": "thanks a ton",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5644749999046326
+    }
+  },
+  {
+    "text": "thanks a million",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5632426142692566
+    }
+  },
+  {
+    "text": "thank you loads",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5638265609741211
+    }
+  },
+  {
+    "text": "thank you heaps",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5729749202728271
+    }
+  },
+  {
+    "text": "thanks a whole bunch",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.6060143113136292
+    }
+  },
+  {
+    "text": "thanks a whole lot",
+    "intent": "user_thanks",
+    "intent_prediction": {
+      "name": "utter_thanks",
+      "confidence": 0.5943190455436707
+    }
+  },
+  {
+    "text": "i am not feeling well",
+    "intent": "med_not_helped",
+    "intent_prediction": {
+      "name": "not_well",
+      "confidence": 0.6097129583358765
+    }
+  },
+  {
+    "text": "No",
+    "intent": "med_not_helped",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8015248775482178
+    }
+  },
+  {
+    "text": "18-",
+    "intent": "age_below_18",
+    "intent_prediction": {
+      "name": "small_duration",
+      "confidence": 0.8371538519859314
+    }
+  },
+  {
+    "text": "20+",
+    "intent": "age_above_18",
+    "intent_prediction": {
+      "name": "small_duration",
+      "confidence": 0.8371538519859314
+    }
+  },
+  {
+    "text": "fever",
+    "intent": "ask_inform_symptoms",
+    "intent_prediction": {
+      "name": "fever_sym",
+      "confidence": 0.4915909469127655
+    }
+  },
+  {
+    "text": "cold",
+    "intent": "ask_inform_symptoms",
+    "intent_prediction": {
+      "name": "cold",
+      "confidence": 0.715172529220581
+    }
+  },
+  {
+    "text": "headache",
+    "intent": "ask_inform_symptoms",
+    "intent_prediction": {
+      "name": "headache",
+      "confidence": 0.7789106965065002
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "cold_confirm",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.32785481214523315
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "fracture_accepted",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.32785481214523315
+    }
+  }
+]

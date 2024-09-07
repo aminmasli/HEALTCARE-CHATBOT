@@ -1,0 +1,68 @@
+
+------------------------ Project Run ----------------------
+
+rasa server run : 
+open anaconda prompt terminal > cd your project directory file >
+rasa run
+
+------------Client site run :
+
+enter cd > client> then run
+python app.py 
+
+
+
+If do any changes to code> 
+
+1. rasa train 
+2. rasa run
+
+If do any changes to client site code>
+
+1. kill client terminal and again run
+
+------------------------------------------------------------
+
+
+
+make symptoms based disease large scale tree including 10 more disease. like
+fever -> cold -> allergy -> influenza
+fever -> cold -> no allergy -> common cold
+fever -> no cold -> headache -> 
+headache -> pain in whole head -> stress 
+headache -> no cold -> pain in side of the head -> sound/light sensitivity -> Migraine
+
+
+
+
+Story telling for chartbot
+
+1. Ask first about core problems.
+2. Ask about days of problems.
+3. Accoding core problems ask others syntoms and other problems.
+4. Make decition affirm (yes or no).
+5. Loop questions 2 and 3 about more problems.
+6. confirm about dissage.
+
+
+
+get confusion mattrix
+
+[[20  0  0 ...  0  0  0]
+ [ 0  5  0 ...  0  0  0]
+ [ 0  0  6 ...  0  0  0]
+ [ 0  0  0 ... 12  0  0]
+ [ 0  0  0 ...  0 14  0]
+ [ 0  0  0 ...  0  0  4]]
+
+
+
+Disease and symptoms Referrence : 
+https://www.cdc.gov/antibiotic-use/common-illnesses.html
+
+
+
+
+
+
+
